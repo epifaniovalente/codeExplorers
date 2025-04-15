@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    --cor1: #FFF;
+    --cor2: #C2C2C2;
+    --cor3: #FF9500;
+    --cor4: #FF3B30;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor1);
+}
+
+main{
+    width: 500px;
+    height: 100vh;
+    margin: auto;
+    background-color: var(--cor2);
+}
