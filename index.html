@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Seguro</title>
+    <link rel="stylesheet" href="login-seguro/CSS/style.css">
+    <link rel="stylesheet" href="login-seguro/CSS/media-query.css">
+</head>
+
+<body>
+
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <!--
+
+                AQUI VAI A IMAGEM APARTIR DAS CSS 
+                
+                -->
+            </div>
+            <div id="formulario">
+                <h1>Dados Seguros</h1>
+                <p class="infor">Seja Bem-vindo(a) Faça seu cadastro para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+
+                <form action="#" method="post" autocomplete="off">
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" autocomplete="off">
+                        <span id="erro-email" class="sms-erro"></span>
+                    </div>
+                    <div class="campo">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="sua senha">
+                        <span id="erro-senha" class="sms-erro"></span>
+                    </div>
+                    <button type="button" onclick="entrar()">Entrar</button>
+                </form>
+            </div>
+
+        </section>
+        <footer>
+            <p>EpiCoder - Autenticação Simulada By CoderExplorers &#x1F4BB;  &copy;</p>
+        </footer>
+    </main>
+
+    <script src="login-seguro/JS/script.js" defer></script>
+</body>
+
+</html>
