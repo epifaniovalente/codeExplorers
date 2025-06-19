@@ -53,7 +53,7 @@ section#login {
 
 section#login>div#imagem {
     display: block;
-    background: url(../IMAGE/ecra-pc.jpg) no-repeat;
+    background: url(../image/ecra-pc.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     height: 200px;
