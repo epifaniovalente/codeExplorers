@@ -1,0 +1,457 @@
+
+:root {
+    --main-color: #0099ff;
+    --main-colo: #00ffae;
+    --black:#0f0f0f;
+    --bg: #010303;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+                        /*ESTILIZAÇÃO DO MENU*/
+body {
+    background-color: var(--bg)
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: var(--bg);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #b8b8b8ef;
+}
+
+.navbar a:hover {
+    color: #fff;
+    border-bottom: 0.1rem solid var(--main-color);
+    
+}
+
+.btn-contacto {
+    background-color: var(--main-colo);
+    color: #ffffff;
+    padding: 8px 8px;
+    font-size: 1, 8rem;
+    cursor: pointer;
+    margin-top: 0;
+    display: inline-block;
+    border-radius: 2rem;
+}
+
+.btn-contacto a:hover {
+    color: white;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+/*ESTILIZAÇÃO DO MENU*/
+
+                    /*ESTILIZAÇÃO DO CONTEÚDO*/
+.home-conteiner section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.home-conteiner {
+    background: url(./img/icon01.jpg);
+    padding: 85px;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.conteudo {
+    max-width: 60rem;
+}
+
+.conteudo h3 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.conteudo p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: justify;
+    align-items: center;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.conteudo h3 span {
+    color: #ffcc00;
+}
+
+.btn {
+    background-color: var(--main-colo);
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 2rem;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+.title {
+    font-size: 4rem;
+    color: var(--main-color);
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.title span {
+    color: #ffcc00;
+    text-transform: uppercase;
+}
+
+.about {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 1.5rem;
+}
+
+.about .row .conteudo {
+    padding: 2rem;
+}
+
+.about .row .conteudo h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .row .conteudo p {
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/*ESTILIZAÇÃO DO CONTEÚDO */
+
+            /*ESTILIZAÇÃO DOS Programadores da Code EXPLERRS */
+.box-conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu {
+    padding: 5px 2%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+.menu .box-conteiner .box {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.menu .box-conteiner .box img {
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.menu .box-conteiner .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-conteiner .box .pr {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-conteiner .box .pr span {
+    font-size: 1.5rem;
+
+    font-weight: lighter;
+}
+
+.menu .box-conteiner .box:hover {
+    background-color: #fff;
+}
+
+.menu .box-conteiner .box:hover>* {
+    color: var(--black);
+}
+
+/*ESTILIZAÇÃO DOS Programadores da Code EXPLERS */
+
+
+                /*ESTILIZAÇÃO DOS INSTRURTORES DA CODE EXPLERS  */
+.review .box-conteiner .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 6rem 0;
+    cursor: pointer;
+
+}
+
+.review .box-conteiner .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.review .box-conteiner .box p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 2rem;
+    line-height: 1.8;
+}
+
+.review .box-conteiner .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+/*ESTILIZAÇÃO DOS INSTRURTORES DA CODE EXPLERS  */
+                    /*ESTILIZAÇÃO DO FORMULÁRIO*/
+section.Formulario{
+    padding:80px 4%;
+
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+   
+}
+form input,textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color:#fff;
+    font-size:18px;
+}
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input {
+    width: 100px;
+    background-color: var(--main-colo);
+    color: yellow;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+form .btn-enviar input:hover {
+     box-shadow: 0px 0px 8px var(--main-color);
+     transform: scale(1.05);
+}
+
+/*ESTILIZAÇÃO DO FORMULÁRIO  */
+
+
+                    /*ESTILIZAÇÃO DO FOOTER  */
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--main-colo);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 2px 0;
+}
+
+.border {
+    border-top: 2px solid var(--main-color);
+}
+
+footer .line-footer p i {
+    color: var(--main-colo);
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+/*ESTILIZAÇÃO DO FOOTER  */
+/* ========== MEDIA QUERIES PARA RESPONSIVIDADE ========== */
+@media (max-width: 1024px) {
+    .conteudo h3 {
+        font-size: 3.2rem;
+    }
+
+    .conteudo p {
+        font-size: 1.8rem;
+    }
+
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .about .row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 1.5rem;
+    }
+
+    .header section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+
+    .home-conteiner {
+        padding: 50px 20px;
+    }
+
+    .conteudo h3 {
+        font-size: 2.5rem;
+    }
+
+    .conteudo p {
+        font-size: 1.6rem;
+    }
+
+    .box-conteiner {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    form input,
+    textarea {
+        font-size: 16px;
+    }
+
+    .btn-contacto {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteudo h3 {
+        font-size: 2rem;
+    }
+
+    .conteudo p {
+        font-size: 1.4rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    .menu .box-conteiner .box,
+    .review .box-conteiner .box {
+        padding: 2rem;
+    }
+
+    .btn-social button {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    footer .flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .header section {
+        padding: 1rem;
+    }
+}
+
+
+
+

@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/* --- Variáveis --- */
+:root {
+    --fundo: #000000;
+    --cor-primaria: #FFFFFF; /* Renomeado para maior clareza */
+    --cor-secundaria: #FFD700; /* Renomeado */
+    --cor-texto-claro: #B0C4DE; /* Renomeado */
+    --cor-destaque: #556B2F; /* Renomeado */
+    --cor-cinza: #C0C0C0; /* Renomeado */
+}
+
+/* --- Reset Básico --- */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    box-sizing: border-box; /* Adicionado para melhor controle de layout */
+}
+
+/* --- Estilos do Cabeçalho --- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 2%;
+    background-color: var(--fundo);
+    z-index: 1000;
+    border-bottom: .5px solid #0A66C2;
+}
+
+.header-content { /* Novo seletor */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#logo img {
+    width: 70px;
+}
+
+.main-nav { /* Novo seletor */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link { /* Novo seletor */
+    color: var(--cor-texto-claro);
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    position: relative; /* Para o efeito de sublinhado */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--cor-secundaria);
+}
+
+.nav-link.ativo::after { /* Classe para o link ativo */
+    content: '';
+    position: absolute;
+    height: 3px;
+    border-radius: 30px;
+    left: 0;
+    bottom: -5px; /* Ajuste a posição conforme necessário */
+    width: 100%; /* Para sublinhar todo o link */
+    background-color: var(--cor-secundaria);
+}
+
+.btn-whatsapp { /* Novo seletor, sem ID */
+    background-color: #25d366;
+    color: white;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(18, 140, 126, 0.274);
+}
+
+.menu-toggle { /* Novo seletor para o botão do menu mobile */
+    display: none; /* Escondido por padrão, mostrado em mobile */
+    background-color: transparent;
+    border: none;
+    color: var(--cor-texto-claro);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.mobile-nav { /* Novo seletor para o menu drop-down */
+    display: none; /* Escondido por padrão, exibido com JS em mobile */
+    position: absolute;
+    top: 50px; /* Ajuste conforme a altura do seu header */
+    left: 0;
+    right: 0;
+    background-color: var(--fundo);
+    border-bottom: 1px solid #0A66C2;
+    overflow: hidden;
+    height: 0; /* Controlado por JS para animação */
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mobile-nav.is-open { /* Classe para abrir o menu */
+    height: fit-content;
+    display: block;
+}
+
+.mobile-nav ul {
+    list-style: none; /* Remover marcadores de lista */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.mobile-nav ul li {
+    padding: 0.5rem 0;
+}
+
+.mobile-nav ul li a {
+    color: var(--cor-texto-claro);
+    display: block; /* Para que o link ocupe toda a área do li */
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*ESTILIZAÇÃO DO FOOTER  */
+
+footer {
+    margin-top: 5rem;
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: column;
+    border-top: .5px solid #0A66C2;
+}
+
+.midia-social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#facebook,
+#instagram,
+#whatsapp,
+#linkedin {
+    font-size: 1.5rem;
+}
+
+#facebook {
+    color: #1877F2;
+    font-size:1.8rem;
+
+    transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#facebook:hover{
+    transform: scale(1.2);
+}
+
+#instagram {
+    color: #E1306C;
+    font-size:1.8rem;
+
+    transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#instagram:hover{
+    transform: scale(1.2);
+}
+
+#whatsapp {
+    color: #25d366;
+    font-size:1.8rem;
+
+    transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#whatsapp:hover{
+    transform: scale(1.2);
+}
+
+#linkedin {
+    color: #0A66C2;
+    font-size:1.8rem;
+
+    transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#linkedin:hover{
+    transform: scale(1.2);
+}
+
+.content-rodape h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--cor-secundaria);
+    font-weight: 500;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    color: var(--cor-texto-claro);
+    letter-spacing: 1px;
+}
+
+/*ESTILIZAÇÃO DO FOOTER  */
+
+
+/* --- Media Queries Refatoradas --- */
+@media screen and (max-width: 860px) { /* Ponto de quebra principal para mobile */
+    .main-nav,
+    .btn-whatsapp {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+}
